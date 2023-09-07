@@ -1,0 +1,30 @@
+
+select * FROM IMPIEGATO
+where eta > 29
+
+SELECT * FROM IMPIEGATO
+WHERE REDDITOMENSILE>800
+
+select * from Impiegato
+where detrazionefiscale = 1
+
+select * from impiegato
+where detrazionefiscale=0
+
+select * from impiegato
+where cognome  like 'G%'
+order by cognome asc
+
+
+select count(*)  as totaledipendenti from impiegato
+
+
+select sum(redditomensile) as totaleredditi from impiegato
+
+select avg(redditomensile) as mediareddito from impiegato
+
+select max (redditomensile) as stipendiomassimo from impiegato
+select min (redditomensile) as stipendiominimo from impiegato
+
+
+select avg(eta) as mediaeta from impiegato
